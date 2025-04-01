@@ -4,6 +4,7 @@
     --bg-color: #555;
     --color-2:  #567449;
 }
+
 .contactUs_body{
     background-color: antiquewhite;
     
@@ -38,7 +39,7 @@ li{
     margin: 5px;
 }
 nav a{
-    color: rgb(132, 211, 58);
+    color: rgb(98, 192, 10);
     text-decoration: none;
     text-align: center;
     width: 2;
@@ -49,6 +50,7 @@ nav a{
 nav a:hover {
     color: #567449;
     border: 1px solid;
+    text-decoration: none;
     border-radius: 30px;
     transform: scale(1.1);
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
@@ -63,9 +65,10 @@ a.active:hover{
     border: none;
 }
 
-.contactUs_section{display: flex;
-    margin-top: 60px;
-    margin-left: 60px;
+.contactUs_section{
+    display: flex;
+    margin-top: 160px;
+    margin-left: 160px;
     margin-right: 60px;
     margin-bottom: 0px;
 

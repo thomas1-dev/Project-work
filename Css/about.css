@@ -299,7 +299,7 @@ a.active:hover{
     width: 80px;
     height: 80px;
     border-radius: 10px;
-    background-color: #23c5c5;
+    background-color: #000000;
     color: white;
     border: none;
     font-size: 24px;
@@ -308,16 +308,35 @@ a.active:hover{
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 14px rgba(139, 92, 246, 0.4);
+    box-shadow: 0 4px 14px rgba(251, 255, 0, 0.4);
   }
   
   .round-button:hover {
-    background-color: #ffffff;
+    background-color: #23c5c5;
     transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+    box-shadow: 0 6px 20px black;
   }
   
   .round-button:active {
     transform: scale(0.95);
   }
+  .footer {
+    background-color: #545555;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.social-media a {
+    color: #23c5c5;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    color: #ffffff;
+}
+
+
   

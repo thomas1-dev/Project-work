@@ -66,9 +66,10 @@ a.active:hover{
     border: none;
 }
 
-@media (max-width: 127px), (min-width: 400px) {#contacth3{
+@media (max-width: 127px), (min-width: 400px) {.contacth3{
 text-align: center;
-
+font-style: italic;
+font-family: sans-serif;
 }
 }
 @media (max-width: 127px), (min-width: 400px){ 

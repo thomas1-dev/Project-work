@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Internship GCOM group work"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Project work"
+	}
+}

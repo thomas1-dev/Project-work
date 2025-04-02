@@ -66,17 +66,25 @@ a.active:hover{
     border: none;
 }
 
+@media (max-width: 127px), (min-width: 400px) {#contacth3{
+text-align: center;
+
+}
+}
+@media (max-width: 127px), (min-width: 400px){ 
+
 .contactUs_section{
     display: flex;
-    margin-top: 160px;
-    margin-left: 160px;
+    margin-top: 10px;
+    margin-left: 10px;
     margin-right: 60px;
     margin-bottom: 0px;
 
 }
+
 #contactUs_img{
-    width:275px ;
-    height: 334px;
+    width:320px ;
+    height: 404px;
     margin-top: 10px;
 }
 .contactUs_h1{
@@ -92,7 +100,8 @@ a.active:hover{
     border: 2px solid;
     display: flex;
     justify-content: space-around;
-    gap: 30px;
+    gap: 20px;
+    width: 160%;
 
 }
 
@@ -142,4 +151,35 @@ a:hover{
     transform: scale(1.5);
     text-decoration: underline;
     transition: all 1.40s ease;
+}
+}
+footer{
+    background-color: rgb(117, 94, 94);
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 30px 0px 30px 0px;
+    box-shadow: 0px 0px 5px 0px var(--bg-color);
+}
+a{
+    color: rgb(215, 221, 209);
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.socials a:hover {
+    color: #00ffff;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }

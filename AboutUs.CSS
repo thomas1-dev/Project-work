@@ -1,0 +1,148 @@
+
+ *, *::before,
+  *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+}
+ body { 
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    line-height: 1.6; 
+    background: antiquewhite; 
+    color:#000000; 
+}
+ img { 
+    max-width: 100%; 
+    display: block; 
+}
+ h1, h2, h3 { 
+    font-weight: 600; 
+    line-height: 1.2; 
+}
+ a { 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+ 
+ header {
+   background: #fff; /* white header for contrast */
+   box-shadow: 0 2px 6px rgba(0,0,0,.06);
+   position: sticky; top:0; z-index: 1000;
+ }
+ .container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 1rem; 
+}
+ .nav-wrapper { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    height: 70px; 
+}
+ .logo { 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+}
+ nav ul { 
+    display: flex; 
+    gap: 1.5rem; 
+    list-style: none; 
+}
+ nav li { }
+ nav a { 
+    padding: .5rem 1rem; 
+    border-radius: 4px; 
+    transition: background .10s ease; 
+}
+ nav a:hover { 
+    background: rgba(0,0,0,.05); 
+    border-radius: 20px ;
+    box-shadow: #c43737 0px 0px 3px 1px;
+}
+
+
+ section {
+     padding: 4rem 0;
+     }
+ .section-title { 
+    text-align: center; 
+    margin-bottom: 1rem;
+ }
+
+ 
+ .socialy-banner {
+   background:#ffc798; /* yellow */
+   padding:4rem 0 6rem;
+   position:relative;
+ }
+ .socialy-banner h1 { 
+    font-size: 2.5rem; 
+    margin-bottom:.75rem; 
+}
+
+ .socialy-thumb-grid { 
+    display:grid; 
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); 
+    gap:1rem; margin-top:2rem; }
+
+ .socialy-two-col { 
+   display:grid; 
+   grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); 
+   gap:2rem; 
+   align-items:center; 
+}
+ .socialy-feature-icons { 
+   display:flex; 
+   justify-content:center; 
+   gap:3rem; 
+   margin-top:3rem; 
+}
+ .socialy-feature { 
+   text-align:center; 
+   max-width:180px; 
+}
+ .socialy-feature svg { 
+   width:48px; 
+   height:48px; 
+   margin:0 auto .75rem; 
+   fill:#000;
+ }
+
+
+ .trust-hero { 
+   display:grid; 
+   grid-template-columns: 1fr 1fr; 
+   gap:2rem; 
+   align-items:center;
+}
+ .trust-stats { 
+   display:grid; 
+   grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); 
+   gap:1.5rem; 
+   text-align:center; 
+   margin:3rem 0; 
+}
+ .trust-stats h3 { 
+   font-size:1.75rem; 
+   color:#000; 
+}
+ .trust-block { 
+   margin-top:3rem; 
+}
+ .trust-block h2 { 
+   border-left:4px solid #1c9b46; 
+   padding-left:.75rem; 
+   margin-bottom:1rem; 
+   font-size:1.75rem; 
+}
+
+
+ footer { 
+    background:#722f37; 
+    color:#fff; 
+    padding:2rem 0; 
+    text-align:center; 
+    margin-top:4rem; 
+}

@@ -51,6 +51,15 @@ section{
    
 
 }
+#form_btn{
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 7px;
+    width: 46%;
+    height: 37px;
+    box-shadow: #00ffff 0px 0px 4px 2px;
+}
+
 .container1{
     justify-content: center;
     justify-items: center;
@@ -109,6 +118,21 @@ footer {
     padding:2rem 0; 
     text-align:center; 
     margin-top:4rem; 
+}
+i:hover{
+    color: #00ffff;
+}
+a:hover{
+    color: aqua;
+    transform: scale(1.5);
+    transition: all 1.40s ease;
+}
+.bx{
+    font-size: 10px;
+        display: flex;
+        justify-content: center;
+        gap:1px;
+        margin-top: 10px;
 }
 
 /* @media (max-width: 127px), (min-width: 400px) {h3{

@@ -40,9 +40,6 @@
     align-items: center; 
     justify-content: space-between; 
     height: 70px; 
-    display: none;
-    position: absolute;
-    top: 90px;
 }
  .logo { 
     font-size: 1.5rem; 
@@ -52,7 +49,6 @@
     display: flex; 
     gap: 1.5rem; 
     list-style: none; 
-    flex-direction: column;
 }
  nav li { }
  nav a { 

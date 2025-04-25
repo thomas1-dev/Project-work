@@ -1,3 +1,122 @@
+:root{
+    --primary-color:  rgb(236, 199, 78);
+    --foreground-color: transparent;
+    --bg-color: #555;
+    --color-2:  #567449;
+}
+body {
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+header {
+    background-color: white;
+    color: rgb(24, 16, 16);
+    padding: 10px 0;
+    text-align: center;
+    height: 5rem;
+    margin-bottom: 30px;
+}
+
+.logo a{
+    color: black;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bolder;
+}
+nav{
+    background-color: transparent;
+    padding: 1px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: bold;
+    width: 400px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 15px;
+    /* border-radius: 30px 0px 30px 0px;
+    box-shadow: 0px 0px 5px 0px var(--bg-color); */
+    top: 0;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0.5rem;
+    
+    
+}
+.btn{
+    color: #502020;
+    
+   
+
+}
+
+.btn:hover{
+    color: #502020;
+    border-radius: 20px;
+    padding: 10px;
+    width: 0px;
+    border: 1px solid black;
+    box-shadow: 0 0 3px 2px;
+}
+
+
+
+     /* Move the nav bar to the right */
+/* }
+li{
+    display: inline;
+    margin: 5px;
+}
+nav a{
+    color: rgb(132, 211, 58);
+    text-decoration: none;
+    text-align: center;
+    width: 2;
+    padding: 15px;
+    margin: 0;
+    
+}
+nav a:hover {
+    color: #567449;
+    border: 1px solid;
+    border-radius: 30px;
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+a.active{
+    background-color: var(--bg-color);
+    border-radius:25px ;
+    color: yellow;
+}
+a.active:hover{
+    color: rgb(236, 236, 112);
+    border: none;
+    
+}*/
+
+
+.product-link {
+    text-decoration: none;
+    color: rgb(88, 32, 32);
+    transform: scale(1);
+    transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.3s ease;
+}
+
+.product-link:hover {
+    color: rgb(120, 131, 81);
+    text-decoration: none;
+    transform: scale(1.0);
+    transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.3s ease;
+}
 section {
     margin: 0;
     padding: 10px;
@@ -6,9 +125,157 @@ section {
     border-radius: 10px 10px 5px 5px;
     box-shadow: 0 0 5px #ccc;
     background-color: transparent;
+    
+    justify-items: center;
     /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border: 1px solid black; */
     
 }
+.container{
+    --cols: 4;
+    --height: 20rem;
+    --gap: ;
+
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    grid-auto-rows: repeat(var(--height));
+    gap: 3rem;
+    
+    
+
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; */
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #888;
+}
+.image-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* Media Query for Mobile Devices */
+@media (min-width: 450px) and (max-width: 768px) {
+    /* nav {
+        position: absolute;
+        right: 0;
+        width: 80%;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .btn {
+        width: 90%;
+        text-align: center;
+    } */
+    .container{
+        --cols: 3;
+        --height: 20rem;
+    }
+    /* .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 18rem;
+        margin: 10px auto;
+    }
+    img{
+        width: 100%;
+    }
+
+    .image-text, .cart {
+        font-size: 12px;
+        padding: 5px;
+    } */
+}
+@media screen and (max-width: 449px) {
+    .container{
+        --cols: 2;
+        --height: 20rem;
+        
+    }
+    
+}
+footer{
+    background-color: rgb(117, 94, 94);
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 30px 0px 30px 0px;
+    box-shadow: 0px 0px 5px 0px var(--bg-color);
+}
+a{
+    color: rgb(215, 221, 209);
+    text-decoration: none;
+}
+
+/* When checkbox is checked, apply dark mode 
+:has(#mode-toggle:checked) {
+    background-color: black;
+    color: white;
+}
+
+Apply dark mode when checkbox is checked 
+:has(#mode-toggle:checked) {
+    background-color: black;
+    color: white;
+}
+
+Target headers, sections, divs, articles, and other elements 
+:has(#mode-toggle:checked) h1,
+:has(#mode-toggle:checked) h2,
+:has(#mode-toggle:checked) h3,
+:has(#mode-toggle:checked) h4,
+:has(#mode-toggle:checked) h5,
+:has(#mode-toggle:checked) h6,
+:has(#mode-toggle:checked) p,
+:has(#mode-toggle:checked) section,
+:has(#mode-toggle:checked) div,
+:has(#mode-toggle:checked) article {
+    background-color: #222;  Darker shade for sections 
+    color: white;
+}
+
+
+*/

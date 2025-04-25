@@ -136,7 +136,7 @@ section {
 .container{
     --cols: 4;
     --height: 20rem;
-    --gap: ;
+    /* --gap: ; */
 
     display: grid;
     width: 50%;

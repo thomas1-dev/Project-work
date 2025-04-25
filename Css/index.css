@@ -9,98 +9,26 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flexbox;    
+    
+    
 }
 header {
-    background-color: transparent;
-    color: white;
+    background-color: white;
+    color: rgb(24, 16, 16);
     padding: 10px 0;
     text-align: center;
-    height: 100px;
-    margin-top: 0px;
-    margin-right: 0%;
+    height: 5rem;
+    margin-bottom: 30px;
 }
-.logo{
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-   
-}
+
 .logo a{
-    color: rgb(51, 48, 40);
-    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bolder;
 }
-.menu {
-    display: flex;
-    align-items: center;
-    width: 800px;
-    gap: 10px;
-    margin-top: 10px;
-    margin-left: 599px;
-}
-
-/* The Search inside the Menu */
-.menu .search {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-.menu .search button {
-    background-color: rgb(236, 199, 78);
-    width: 100px;
-    color: white;
-    border: none;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.menu .search button:hover {
-    background-color: rgb(68, 63, 47);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-.menu .search input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 300px;
-}
-.menu .search input:focus {
-    outline: none;
-}
-
-/* Cart inside the Menu */
-.menu .main-cart {
-    background-color: rgb(236, 199, 78);
-    width: 100px;
-    height: 40px;
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 0; /* Align to the left */
-    align-self: flex-start; /* Ensure it stays at the left side */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.main-cart:hover {
-    background-color: rgb(255, 215, 100);
-    color: rgb(38, 37, 51);
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-/* Navigation */
 nav{
-    background-color: rgb(243, 238, 238);
+    background-color: transparent;
     padding: 1px;
     align-items: center;
     align-content: center;
@@ -111,11 +39,39 @@ nav{
     width: 400px;
     position: absolute;
     z-index: 1;
-    margin-top: -105px;
-    border-radius: 30px 0px 30px 0px;
-    box-shadow: 0px 0px 5px 0px var(--bg-color);
-    right: 0; /* Move the nav bar to the right */
+    margin-top: 15px;
+    /* border-radius: 30px 0px 30px 0px;
+    box-shadow: 0px 0px 5px 0px var(--bg-color); */
+    top: 0;
+    right: 0;
 }
+
+nav li{
+    display: inline;
+    margin: 0.5rem;
+    
+    
+}
+.btn{
+    color: #502020;
+    
+   
+
+}
+
+.btn:hover{
+    color: #502020;
+    border-radius: 20px;
+    padding: 10px;
+    width: 0px;
+    border: 1px solid black;
+    box-shadow: 0 0 3px 2px;
+}
+
+
+
+     /* Move the nav bar to the right */
+/* }
 li{
     display: inline;
     margin: 5px;
@@ -144,34 +100,57 @@ a.active{
 a.active:hover{
     color: rgb(236, 236, 112);
     border: none;
-}
-/* For the products */
+    
+}*/
+
+
 .product-link {
     text-decoration: none;
     color: rgb(88, 32, 32);
     transform: scale(1);
     transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.3s ease;
 }
+
 .product-link:hover {
     color: rgb(120, 131, 81);
     text-decoration: none;
-    transform: scale(1.1);
+    transform: scale(1.0);
     transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.3s ease;
 }
 section {
-    margin: 10px;
+    margin: 0;
     padding: 10px;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 10px 10px 5px 5px;
     box-shadow: 0 0 5px #ccc;
-    background-color: white;
-}
-.container{
-    display: flex;
+    background-color: transparent;
+    
+    justify-items: center;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    border: 1px solid black; */
+    
+}
+.container{
+    --cols: 4;
+    --height: 20rem;
+    --gap: ;
+
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    grid-auto-rows: repeat(var(--height));
+    gap: 3rem;
+    
+    
+
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; */
 }
 .image-container {
     position: relative;
@@ -211,8 +190,8 @@ section {
     border-radius: 5px;
 }
 /* Media Query for Mobile Devices */
-@media (min-width: 150px) and (max-width: 768px) {
-    nav {
+@media (min-width: 450px) and (max-width: 768px) {
+    /* nav {
         position: absolute;
         right: 0;
         width: 80%;
@@ -223,13 +202,17 @@ section {
     .btn {
         width: 90%;
         text-align: center;
+    } */
+    .container{
+        --cols: 3;
+        --height: 20rem;
     }
-
-    .image-container {
+    /* .image-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 100%;
+        height: 18rem;
         margin: 10px auto;
     }
     img{
@@ -239,7 +222,15 @@ section {
     .image-text, .cart {
         font-size: 12px;
         padding: 5px;
+    } */
+}
+@media screen and (max-width: 449px) {
+    .container{
+        --cols: 2;
+        --height: 20rem;
+        
     }
+    
 }
 footer{
     background-color: rgb(117, 94, 94);
@@ -259,16 +250,32 @@ a{
     text-decoration: none;
 }
 
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+/* When checkbox is checked, apply dark mode 
+:has(#mode-toggle:checked) {
+    background-color: black;
+    color: white;
 }
 
-.socials a:hover {
-    color: rgb(105, 105, 199);
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
+Apply dark mode when checkbox is checked 
+:has(#mode-toggle:checked) {
+    background-color: black;
+    color: white;
 }
 
+Target headers, sections, divs, articles, and other elements 
+:has(#mode-toggle:checked) h1,
+:has(#mode-toggle:checked) h2,
+:has(#mode-toggle:checked) h3,
+:has(#mode-toggle:checked) h4,
+:has(#mode-toggle:checked) h5,
+:has(#mode-toggle:checked) h6,
+:has(#mode-toggle:checked) p,
+:has(#mode-toggle:checked) section,
+:has(#mode-toggle:checked) div,
+:has(#mode-toggle:checked) article {
+    background-color: #222;  Darker shade for sections 
+    color: white;
+}
+
+
+*/

@@ -9,26 +9,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
-    
+    display: flexbox;    
 }
 header {
-    background-color: white;
-    color: rgb(24, 16, 16);
+    background-color: transparent;
+    color: white;
     padding: 10px 0;
     text-align: center;
-    height: 5rem;
+    height: 60px;
     margin-bottom: 30px;
 }
-
-.logo a{
-    color: black;
-    font-size: 35px;
-    font-style: italic;
-    font-weight: bolder;
-}
 nav{
-    background-color: transparent;
+    background-color: rgb(243, 238, 238);
     padding: 1px;
     align-items: center;
     align-content: center;
@@ -39,39 +31,11 @@ nav{
     width: 400px;
     position: absolute;
     z-index: 1;
-    margin-top: 15px;
-    /* border-radius: 30px 0px 30px 0px;
-    box-shadow: 0px 0px 5px 0px var(--bg-color); */
-    top: 0;
-    right: 0;
+    margin-top: 0px;
+    border-radius: 30px 0px 30px 0px;
+    box-shadow: 0px 0px 5px 0px var(--bg-color);
+    right: 0; /* Move the nav bar to the right */
 }
-
-nav li{
-    display: inline;
-    margin: 0.5rem;
-    
-    
-}
-.btn{
-    color: #502020;
-    
-   
-
-}
-
-.btn:hover{
-    color: #502020;
-    border-radius: 20px;
-    padding: 10px;
-    width: 0px;
-    border: 1px solid black;
-    box-shadow: 0 0 3px 2px;
-}
-
-
-
-     /* Move the nav bar to the right */
-/* }
 li{
     display: inline;
     margin: 5px;
@@ -100,10 +64,7 @@ a.active{
 a.active:hover{
     color: rgb(236, 236, 112);
     border: none;
-    
-}*/
-
-
+}
 .product-link {
     text-decoration: none;
     color: rgb(88, 32, 32);
@@ -125,24 +86,21 @@ section {
     border-radius: 10px 10px 5px 5px;
     box-shadow: 0 0 5px #ccc;
     background-color: transparent;
-    
-    justify-items: center;
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid black; */
+    border: 1px solid black;
     
 }
 .container{
     --cols: 4;
     --height: 20rem;
-    /* --gap: ; */
+    --gap: ;
 
     display: grid;
     width: 50%;
     grid-template-columns: repeat(var(--cols), 1fr);
     grid-auto-rows: repeat(var(--height));
-    gap: 3rem;
     
     
 
@@ -249,33 +207,3 @@ a{
     color: rgb(215, 221, 209);
     text-decoration: none;
 }
-
-/* When checkbox is checked, apply dark mode 
-:has(#mode-toggle:checked) {
-    background-color: black;
-    color: white;
-}
-
-Apply dark mode when checkbox is checked 
-:has(#mode-toggle:checked) {
-    background-color: black;
-    color: white;
-}
-
-Target headers, sections, divs, articles, and other elements 
-:has(#mode-toggle:checked) h1,
-:has(#mode-toggle:checked) h2,
-:has(#mode-toggle:checked) h3,
-:has(#mode-toggle:checked) h4,
-:has(#mode-toggle:checked) h5,
-:has(#mode-toggle:checked) h6,
-:has(#mode-toggle:checked) p,
-:has(#mode-toggle:checked) section,
-:has(#mode-toggle:checked) div,
-:has(#mode-toggle:checked) article {
-    background-color: #222;  Darker shade for sections 
-    color: white;
-}
-
-
-*/

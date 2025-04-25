@@ -206,6 +206,8 @@ section {
     .container{
         --cols: 3;
         --height: 20rem;
+
+        
     }
     /* .image-container {
         display: flex;
@@ -228,6 +230,7 @@ section {
     .container{
         --cols: 2;
         --height: 20rem;
+       
         
     }
     
@@ -261,7 +264,7 @@ a{
     color: rgb(215, 221, 209);
     text-decoration: none;
 }
-.footer-container{
+.footer-content{
     display: flex;
     flex-direction: column;
     align-items: center;
